@@ -84,6 +84,12 @@ export default function Home() {
             width={50} 
             height={50}
             priority 
+            style={{
+              width: 'auto',
+              height: 'auto',
+              maxWidth: '50px',
+              maxHeight: '50px'
+            }}
           />
         </div>
         <ul className="nav-links">
@@ -140,14 +146,12 @@ export default function Home() {
           <Image
             src="/BESSCurr-banner.jpg"
             alt="Welcome to BESS - Biomedical Engineering Students Society"
-            width={1920}
-            height={1080}
+            fill
+            sizes="100vw"
             className="banner-image"
             priority
             style={{
-              objectFit: 'cover',
-              width: '100%',
-              height: '100%'
+              objectFit: 'cover'
             }}
           />
         </section>
@@ -226,13 +230,12 @@ export default function Home() {
                   <Image
                     src={slide.src}
                     alt={slide.alt}
-                    width={900}
-                    height={400}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
                     style={{
-                      objectFit: 'cover',
-                      width: '100%',
-                      height: '400px'
+                      objectFit: 'cover'
                     }}
+                    priority={index === 0}
                   />
                 </div>
               ))}
@@ -374,7 +377,13 @@ export default function Home() {
                   src="/Mail-banner.png" 
                   alt="Email" 
                   width={30} 
-                  height={30} 
+                  height={30}
+                  style={{
+                    width: 'auto',
+                    height: 'auto',
+                    maxWidth: '30px',
+                    maxHeight: '30px'
+                  }}
                 />
               </a>
               <a 
@@ -388,7 +397,13 @@ export default function Home() {
                   src="/Facebook-banner.png" 
                   alt="Facebook" 
                   width={30} 
-                  height={30} 
+                  height={30}
+                  style={{
+                    width: 'auto',
+                    height: 'auto',
+                    maxWidth: '30px',
+                    maxHeight: '30px'
+                  }}
                 />
               </a>
               <a 
@@ -402,7 +417,13 @@ export default function Home() {
                   src="/Instagram-banner.png" 
                   alt="Instagram" 
                   width={30} 
-                  height={30} 
+                  height={30}
+                  style={{
+                    width: 'auto',
+                    height: 'auto',
+                    maxWidth: '30px',
+                    maxHeight: '30px'
+                  }}
                 />
               </a>
               <a 
@@ -416,7 +437,13 @@ export default function Home() {
                   src="/LinkedIn-banner.png" 
                   alt="LinkedIn" 
                   width={30} 
-                  height={30} 
+                  height={30}
+                  style={{
+                    width: 'auto',
+                    height: 'auto',
+                    maxWidth: '30px',
+                    maxHeight: '30px'
+                  }}
                 />
               </a>
             </div>
@@ -428,6 +455,12 @@ export default function Home() {
                 width={100}
                 height={100}
                 className="contact-logo"
+                style={{
+                  width: 'auto',
+                  height: 'auto',
+                  maxWidth: '100px',
+                  maxHeight: '100px'
+                }}
               />
             </div>
           </div>
