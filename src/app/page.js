@@ -1,103 +1,111 @@
-import Image from "next/image";
+import Head from 'next/head';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+     <>
+      <Head>
+        <title>BESS - Biomedical Engineering Students Society</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+          rel="stylesheet"
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+      </Head>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+      <main>
+        {/* Welcome Banner */}
+        <section id="welcome-banner">
+          <img
+            src="https://cdn.discordapp.com/attachments/512860733516677120/1341268981641777172/Screenshot_2025-02-18_154344.jpg"
+            alt="Welcome to BESS"
+            className="banner-image"
+          />
+        </section>
+
+        {/* Navigation Bar */}
+        <nav className="navbar">
+          <div className="logo">
+            <img
+              src="https://cdn.discordapp.com/attachments/512860733516677120/1339524302747340822/image.png"
+              alt="BESS Logo"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+          </div>
+          <ul className="nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#sponsorship">Sponsorship</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        {/* About Us Section */}
+        <section id="about">
+          <h2>About Us</h2>
+          <p>
+            BESS is the Biomedical Engineering Students Society at UNSW. We aim to support and
+            enrich the student experience for all biomedical engineering students through social
+            events, academic support, and industry engagement.
+          </p>
+        </section>
+
+        {/* Events Section */}
+        <section id="events">
+          <h2>Upcoming Events</h2>
+          <ul>
+            <li>
+              <strong>Industry Night</strong> – A chance to meet professionals in biomedical
+              engineering.
+            </li>
+            <li>
+              <strong>Social Mixer</strong> – Meet and mingle with fellow students.
+            </li>
+            <li>
+              <strong>Technical Workshops</strong> – Hands-on learning with real-world tools.
+            </li>
+          </ul>
+        </section>
+
+        {/* Sponsorship Section */}
+        <section id="sponsorship">
+          <h2>Our Sponsors</h2>
+          <p>
+            We are proudly sponsored by leading biomedical and tech companies who support our
+            mission to grow the next generation of biomedical engineers.
+          </p>
+          <ul>
+            <li>Company A</li>
+            <li>Company B</li>
+            <li>Company C</li>
+          </ul>
+        </section>
+
+        {/* Contact Section */}
+        <section id="contact">
+          <h2>Contact Us</h2>
+          <p>Email us at <a href="mailto:bess.unsw@gmail.com">bess.unsw@gmail.com</a></p>
+          <p>Follow us on our socials:</p>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/bessunsw/" target="_blank" rel="noopener noreferrer">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/bessunsw/" target="_blank" rel="noopener noreferrer">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="https://au.linkedin.com/company/bessunsw" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    </>
   );
 }
