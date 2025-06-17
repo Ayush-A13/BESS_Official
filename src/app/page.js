@@ -170,7 +170,7 @@ export default function Home() {
               professional networking opportunities, and hands-on workshops.
             </p>
             <p>
-              Our diverse community encompasses students pursuing combined bachelor's and master's degrees 
+              Our diverse community encompasses students pursuing combined bachelors and masters degrees 
               across multiple engineering disciplines, fostering interdisciplinary collaboration and innovation:
             </p>
             <ul className="discipline-grid">
@@ -347,7 +347,7 @@ export default function Home() {
           <div className="content-wrapper contact-content">
             <h2>Connect With Us</h2>
             <p>
-              Ready to partner with the future of biomedical engineering? We're excited to explore 
+              Ready to partner with the future of biomedical engineering? We are excited to explore 
               collaboration opportunities and discuss how we can create meaningful connections between 
               your organization and our talented student community.
             </p>
