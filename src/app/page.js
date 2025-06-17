@@ -472,9 +472,6 @@ export default function Home() {
             © 2025 Biomedical Engineering Students Society (BESS) | UNSW Sydney
           </p>
           <p>
-            Built with ❤️ using Next.js and Tailwind CSS
-          </p>
-          <p>
             Visit our{' '}
             <a 
               href="https://unsw.edu.au" 
