@@ -10,7 +10,7 @@ export default function Home() {
 
   const slides = [
     { src: "/ResmedH-Banner.jpg", alt: "ResMed Hackathon" },
-    { src: "/PersonalB-banner.jpg", alt: "Personal Branding Workshop" },
+    { src: "/MockInterview-banner.jpg", alt: "Mock Interview Workshop" },
     { src: "/Pill-banner.jpg", alt: "Industry Networking Event" }
   ];
 
