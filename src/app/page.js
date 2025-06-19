@@ -9,7 +9,7 @@ export default function Home() {
   const [isVisible, setIsVisible] = useState({});
 
   const slides = [
-    { src: "/Pill-banner.jpg", alt: "Pharmaceutical Research Event" },
+    { src: "/ResmedH-Banner.jpg", alt: "ResMed Hackathon" },
     { src: "/PersonalB-banner.jpg", alt: "Personal Branding Workshop" },
     { src: "/Pill-banner.jpg", alt: "Industry Networking Event" }
   ];
@@ -450,7 +450,7 @@ export default function Home() {
 
             <div className="floating">
               <Image
-                src="/bess-logo.png"
+                src="/BESS-Logo.png"
                 alt="BESS Footer Logo"
                 width={100}
                 height={100}
