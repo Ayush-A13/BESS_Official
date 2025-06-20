@@ -144,10 +144,10 @@ export default function Home() {
         {/* Welcome Banner */}
         <section id="welcome-banner" className="banner-section">
           <Image
-            src="/BESSCurr-banner.jpg"
+            src="/BESS-Banner.jpg"
             alt="Welcome to BESS - Biomedical Engineering Students Society"
             fill
-            sizes="100vw"
+            sizes="120vw"
             className="banner-image"
             priority
             style={{
